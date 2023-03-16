@@ -56,7 +56,9 @@ Then, start the PizzaOrderingSystem_OOP.py:
 
 
 # Contributing
-Contributions are welcome! If you find any issues or want to add a new feature, please open an issue or submit a pull request. Thank you in advance for your contributions.
+Contributions are welcome! If you find any issues or want to add a new feature, please open an issue or submit a pull request. 
+
+Thank you in advance for your contributions.
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
