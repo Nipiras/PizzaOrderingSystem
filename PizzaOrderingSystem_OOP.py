@@ -4,7 +4,6 @@
 import csv
 import datetime
 from my_classes import *
-
 #@title Main Function
 with open("Menu.txt", "r", encoding="utf-8") as menu:
   lines = menu.readlines()
@@ -40,19 +39,19 @@ while True:
   if s_choice == "s11":
     selected_pizza = Zeytin(valid_p_choices[p_choice])
     break
-  if s_choice == "s12":
+  elif s_choice == "s12":
     selected_pizza = Mantar(valid_p_choices[p_choice])
     break
-  if s_choice == "s13":
+  elif s_choice == "s13":
     selected_pizza = Peynir(valid_p_choices[p_choice])
     break
-  if s_choice == "s14":
+  elif s_choice == "s14":
     selected_pizza = Et(valid_p_choices[p_choice])
     break
-  if s_choice == "s15":
+  elif s_choice == "s15":
     selected_pizza = Sogan(valid_p_choices[p_choice])
     break
-  if s_choice == "s16":
+  elif s_choice == "s16":
     selected_pizza = Misir(valid_p_choices[p_choice])
     break
   else:
@@ -116,3 +115,4 @@ with open('Orders_Database.csv', 'w', encoding="utf-8", newline='') as file:
                      "card_pwd", "order_descr", "order_cost", "order_time"])
     writer.writerow(order)
 
+input("Programı kapatmak için 'Enter' tuşuna basınız...")
