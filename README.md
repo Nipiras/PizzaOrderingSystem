@@ -1,21 +1,21 @@
-# PizzaOrderingSystem
- Object Oriented Programming exercise
+# Pizza Ordering System [OOP]
+Hands-on project of Object Oriented Programming exercise on Python
 
-# Genel Bakış
+# Overview
 Bu program, [programın amacını buraya yazın örn: This is a sample project demonstrating how to deploy machine learning models using FastAPI and Streamlit. The project contains a web interface built using Streamlit where users can input data and get predictions from different machine learning models. The predictions are made by a FastAPI app which serves the machine learning models as APIs.].
 
-# Gereksinimler
+# Requirements
 Bu programın çalışması için gerekenler:
 
 Python [sürüm numarası]
 [Diğer gereksinimler, modüller vs.]
 
-# Kurulum
+# Setup
 Bu depoyu bilgisayarınıza indirin veya kopyalayın
 Gereksinimleri yükleyin: pip install -r requirements.txt
 Programı çalıştırın: python program.py
 
-# Kullanım
+# Usage
 [Programın kullanımı hakkında bilgi verin. Örnek olarak programın nasıl çalıştırılacağı, hangi parametrelerin verilmesi gerektiği, nasıl kullanılacağı vs. gibi konularda açıklama yapabilirsiniz.]
 
 # Project structure
