@@ -2,7 +2,7 @@
 Hands-on project of Object Oriented Programming exercise on Python
 
 # Overview
-Bu program, [programın amacını buraya yazın örn: This is a sample project demonstrating how to deploy machine learning models using FastAPI and Streamlit. The project contains a web interface built using Streamlit where users can input data and get predictions from different machine learning models. The predictions are made by a FastAPI app which serves the machine learning models as APIs.].
+Bu program, [programın amacını buraya yazın]
 
 # Requirements
 Bu programın çalışması için gerekenler:
@@ -52,18 +52,11 @@ The project has the following structure:
 To run the project, first install the dependencies:
 
 ```pip install -r requirements.txt```
-Then, start the FastAPI app:
-```cd app
-uvicorn main:app --reload
-```
+Then, start the PizzaOrderingSystem_OOP.py:
 
-The API documentation can be accessed at http://localhost:8000/docs.
 
-Finally, start the Streamlit app:
+# Contributing
+Contributions are welcome! If you find any issues or want to add a new feature, please open an issue or submit a pull request. Thank you in advance for your contributions.
 
-```streamlit run streamlit_app/main.py```
-The web interface can be accessed at http://localhost:8501.
-Contributing
-Contributions are welcome! If you find any issues or want to add a new feature, please open an issue or submit a pull request.
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
