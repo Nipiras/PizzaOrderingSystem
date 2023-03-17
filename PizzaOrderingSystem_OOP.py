@@ -42,7 +42,7 @@ while True:
     selected_pizza = Mushroom(valid_p_choices[p_choice])
     break
   elif s_choice == "s13":
-    selected_pizza = Cheese(valid_p_choices[p_choice])
+    selected_pizza = Mozarella(valid_p_choices[p_choice])
     break
   elif s_choice == "s14":
     selected_pizza = Oregano(valid_p_choices[p_choice])
