@@ -4,11 +4,13 @@ import datetime
 from my_classes import *
 
 # Main Function
-with open("Menu.txt", "r") as menu:
+with open("PizzaOrderingSystem\Menu.txt", "r") as menu:
   lines = menu.readlines()
 
 # set/dict of valid choices
 valid_p_choices = {"p1": p1, "p2": p2, "p3": p3, "p4": p4}
+valid_s_choices = {"s11": Olive, "s12": Mushroom, "s13": Mozarella, \
+                   "s14": Oregano, "s15": SalameNapoli, "s16": Tomato}
 
 # Welcome text
 print("Welcome to Pizza Nipiras"\
@@ -34,27 +36,13 @@ for line in lines[6:12]:
 
 while True:
   s_choice = "s" + input("Please enter your additional ingredient number: ")
-  if s_choice == "s11":
-    selected_pizza = Olive(valid_p_choices[p_choice])
-    break
-  elif s_choice == "s12":
-    selected_pizza = Mushroom(valid_p_choices[p_choice])
-    break
-  elif s_choice == "s13":
-    selected_pizza = Mozarella(valid_p_choices[p_choice])
-    break
-  elif s_choice == "s14":
-    selected_pizza = Oregano(valid_p_choices[p_choice])
-    break
-  elif s_choice == "s15":
-    selected_pizza = SalameNapoli(valid_p_choices[p_choice])
-    break
-  elif s_choice == "s16":
-    selected_pizza = Tomato(valid_p_choices[p_choice])
+  if s_choice in valid_s_choices:
+    selected_pizza = valid_s_choices[s_choice](valid_p_choices[p_choice])
     break
   else:
-    print("Please choose a value between 11 and 16!\n")  
+    print("Please choose a value between 11 and 16!\n")
 
+# Order info
 print(f"""\nYour order: {selected_pizza.get_description()}
 The price of your pizza: {selected_pizza.get_cost()} Eu
 Please enter your information for the payment process.\n""")
@@ -106,10 +94,12 @@ order = [email, name, surname, card_id, card_cvc, \
          selected_pizza.get_cost(), order_time]
 
 # csv file
-with open('Orders_Database.csv', 'w', newline='') as file:
+with open('PizzaOrderingSystem\Orders_Database.csv', 'a', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["email", "name", "surname", "card_id", \
-                     "card_cvc", "order_descr", "order_cost", "order_time"])
+    if file.tell() == 0:  # Write the title text if file is empty
+        writer.writerow(["email", "name", "surname", "card_id", \
+                         "card_cvc", "order_descr", "order_cost", "order_time"])
     writer.writerow(order)
+
 
 input("\nPress the 'Enter' key to close the program.")
