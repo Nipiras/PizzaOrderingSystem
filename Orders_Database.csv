@@ -1,2 +1,2 @@
-tc_id,name,surname,card_id,card_pwd,order_descr,order_cost,order_time
-12345678901,Erdem,Kasjd,1234567890123456,123456,Klasik Pizza Zeytin,145,2023-03-10 21:00:06
+email,name,surname,card_id,card_cvc,order_descr,order_cost,order_time
+clarke@super.com,Clark,Kent,3214978654983287,215,Pizza Capricciosa Tomato,8.5,2023-03-17 11:33:16

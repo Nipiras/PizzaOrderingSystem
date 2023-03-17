@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-#@title Component Class
 # Pizza class
 class Pizza:
   def __init__(self, description, cost):
@@ -14,29 +11,29 @@ class Pizza:
     return self.cost
 
 # Pizza options(Pizza)
-class Klasik(Pizza):
+class Margherita(Pizza):
   def __init__(self):
-    super().__init__("Klasik Pizza", 140)
+    super().__init__("Pizza Margherita", 6.5)
 
-class Margarita(Pizza):
+class QuattroFormaggi(Pizza):
   def __init__(self):
-    super().__init__("Margarita Pizza", 120)
+    super().__init__("Quattro Formaggi", 9)
 
-class TurkPizza(Pizza):
+class Capricciosa(Pizza):
   def __init__(self):
-    super().__init__("Türk Pizza", 180)
+    super().__init__("Pizza Capricciosa", 8)
 
-class SadePizza(Pizza):
+class Calzone(Pizza):
   def __init__(self):
-    super().__init__("Sade Pizza", 100)
+    super().__init__("Calzone Pizza", 8)
 
 # Objects of pizza options(Pizza)
-p1 = Klasik()
-p2 = Margarita()
-p3 = TurkPizza()
-p4 = SadePizza()
+p1 = Margherita()
+p2 = QuattroFormaggi()
+p3 = Capricciosa()
+p4 = Calzone()
 
-#@title Decorator Class
+
 # Decorator(Pizza) class
 class Decorator(Pizza):
   def __init__(self, description, cost, component):
@@ -50,34 +47,34 @@ class Decorator(Pizza):
     return self.component.get_cost() + Pizza.get_cost(self)
 
 # Pizza ingredient(Decorator)
-class Zeytin(Decorator):
+class Olive(Decorator):
   def __init__(self, component=None):
-    super().__init__("Zeytin", 5, component=component)
+    super().__init__("Olive", 1.5, component=component)
 
-class Mantar(Decorator):
+class Mushroom(Decorator):
   def __init__(self, component=None):
-    super().__init__("Mantar", 10, component=component)
+    super().__init__("Mushroom", 1, component=component)
 
-class Peynir(Decorator):
+class Mozarella(Decorator):
   def __init__(self, component=None):
-    super().__init__("Keçi Peyniri", 10, component=component)
+    super().__init__("Mozarella", 1, component=component)
 
-class Et(Decorator):
+class Oregano(Decorator):
   def __init__(self, component=None):
-    super().__init__("Et", 20, component=component)
+    super().__init__("Oregano", 0.5, component=component)
 
-class Sogan(Decorator):
+class SalameNapoli(Decorator):
   def __init__(self, component=None):
-    super().__init__("Soğan", 5, component=component)
+    super().__init__("Salame Napoli", 2, component=component)
 
-class Misir(Decorator):
+class Tomato(Decorator):
   def __init__(self, component=None):
-    super().__init__("Mısır", 5, component=component)
+    super().__init__("Tomato", 0.5, component=component)
 
 # Objects of pizza ingredient(Decorator)
-s11 = Zeytin()
-s12 = Mantar()
-s13 = Peynir()
-s14 = Et()
-s15 = Sogan()
-s16 = Misir()
+s11 = Olive()
+s12 = Mushroom()
+s13 = Mozarella()
+s14 = Oregano()
+s15 = SalameNapoli()
+s16 = Tomato()

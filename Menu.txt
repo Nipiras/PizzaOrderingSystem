@@ -1,13 +1,13 @@
-* Lütfen Bir Pizza Tabanı Seçiniz:
-1: Klasik
-2: Margarita
-3: Türk Pizza
-4: Sade Pizza
-* ve seçeceğiniz sos:
-11: Zeytin
-12: Mantarlar
-13: Keçi Peyniri
-14: Et
-15: Soğan
-16: Mısır
-* Teşekkür ederiz!
+* Choose your Pizza:
+1: Margherita
+2: Quattro Formaggi
+3: Capricciosa
+4: Calzone
+* Additional Ingredients:
+11: Olive
+12: Mushroom
+13: Mozarella
+14: Oregano
+15: Salame Napoli
+16: Tomato
+* Buon appetito!
