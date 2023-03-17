@@ -9,7 +9,6 @@ with open("Menu.txt", "r") as menu:
 
 # set/dict of valid choices
 valid_p_choices = {"p1": p1, "p2": p2, "p3": p3, "p4": p4}
-valid_s_choices = {"s11", "s12", "s13", "s14", "s15", "s16"}
 
 # Welcome text
 print("Welcome to Pizza Nipiras"\
