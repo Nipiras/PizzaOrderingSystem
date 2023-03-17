@@ -56,6 +56,32 @@ Install requirements: `pip install -r requirements.txt`
 
 Run the program: `PizzaOrderingSystem_OOP.py`
 
+# Flow Chart
+```
+                        +-------+
+                        | Pizza |
+                        +-------+
+                           /_\
+                            |                                         +-----------+
+    +---------------+---------------+----------------+--------------+ | Decorator | 
+    |               |               |                |                +-----------+
++--------+    +-----------+   +-----------+    +-----------+               /_\
+| Klasik |    | Margarita |   | TurkPizza |    | SadePizza |                |
++--------+    +-----------+   +-----------+    +-----------+                |      +--------+ 
+                                                                            | -- > | Zeytin |
+                                                            +--------+      |      +--------+
+                                                            | Mantar | < -- |
+                                                            +--------+      |      +--------+
+                                                                            | -- > | Peynir |
+                                                            +--------+      |      +--------+
+                                                            |   Et   | < -- |
+                                                            +--------+      |      +--------+
+                                                                            | -- > | Sogan  |
+                                                            +--------+      |      +--------+
+                                                            | Misir  | < -- +
+                                                            +--------+
+```
+
 # Project structure
 The project has the following structure:
 
