@@ -10,7 +10,7 @@ After selecting the ingredient and pizza, user information must be entered for p
    ### The Project Task
       Importing Required Libraries
 
-      Using the menu in the "menu.txt" file
+      Using the menu in the "Menu.txt" file
 
       Create superclass “Pizza”
       - Define the Pizza class and the `get_description()` and `get_cost()` methods for encapsulation within that class.
@@ -39,7 +39,7 @@ After selecting the ingredient and pizza, user information must be entered for p
       Create a main function. 
       - This function will print the menu first. It will then allow the user to select a pizza and toppings from the menu. 
       After calculating the total price of the selected products, the user should receive:
-      the name, surname, TR ID number, credit card number and credit card password information.
+      the name, surname, e-mail, credit card number and credit card cvc information.
       - The collected data and the user's order time should be recorded here in the "Orders_Database.csv" file.
 
 # Requirements
